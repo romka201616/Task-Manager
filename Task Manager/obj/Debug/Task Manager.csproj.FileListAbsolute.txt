@@ -1,0 +1,50 @@
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Task Manager.exe.config
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Task Manager.exe
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Task Manager.pdb
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Npgsql.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Buffers.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Collections.Immutable.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Memory.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Numerics.Vectors.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Text.Encodings.Web.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Text.Json.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Threading.Channels.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.ValueTuple.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Npgsql.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Buffers.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Collections.Immutable.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Memory.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Numerics.Vectors.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Text.Encodings.Web.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Text.Json.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Threading.Channels.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\System.ValueTuple.xml
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.AssemblyReference.cache
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.SuggestedBindingRedirects.cache
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task_Manager.Properties.Resources.resources
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.GenerateResource.cache
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.CoreCompileInputs.cache
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.csproj.CopyComplete
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.exe
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task Manager.pdb
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\TaskManager.LogInForm.resources
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\TaskManager.MainForm.resources
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task_Manager.CreateTaskForm.resources
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\EntityFramework.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\EntityFramework.SqlServer.dll
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\EntityFramework.xml
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\EntityFramework.SqlServer.xml
+C:\Task Manager\Task Manager\Task Manager\obj\Debug\Task_Manager.EditTaskForm.resources
+C:\Task Manager\Task Manager\Task Manager\bin\Debug\Siticone.Desktop.UI.dll
