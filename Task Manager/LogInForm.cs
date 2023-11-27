@@ -158,5 +158,26 @@ namespace TaskManager
         {
             Environment.Exit(0);
         }
+
+        private void siticoneTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(e.KeyChar >= 'A' && e.KeyChar <= 'z') && !(char.IsNumber(e.KeyChar)) && !(e.KeyChar == (char)8))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void siticoneTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(e.KeyChar >= 'A' && e.KeyChar <= 'z') && !(char.IsNumber(e.KeyChar)) && !(e.KeyChar == (char)8))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

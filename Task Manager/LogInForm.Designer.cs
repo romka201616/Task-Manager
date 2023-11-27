@@ -88,6 +88,7 @@
             this.siticoneTextBox1.Size = new System.Drawing.Size(220, 36);
             this.siticoneTextBox1.TabIndex = 8;
             this.siticoneTextBox1.TextChanged += new System.EventHandler(this.siticoneTextBox1_TextChanged);
+            this.siticoneTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.siticoneTextBox1_KeyPress);
             // 
             // siticoneTextBox2
             // 
@@ -110,6 +111,8 @@
             this.siticoneTextBox2.SelectedText = "";
             this.siticoneTextBox2.Size = new System.Drawing.Size(220, 36);
             this.siticoneTextBox2.TabIndex = 9;
+            this.siticoneTextBox2.TextChanged += new System.EventHandler(this.siticoneTextBox2_TextChanged);
+            this.siticoneTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.siticoneTextBox2_KeyPress);
             // 
             // siticoneButton1
             // 
