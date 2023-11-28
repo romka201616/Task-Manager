@@ -42,7 +42,9 @@ namespace TaskManager
                 }
             };
 
-            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.ControlBox = false;
+            this.Text = "";
         }
 
         private void LogInForm_Load(object sender, EventArgs e)
@@ -93,6 +95,13 @@ namespace TaskManager
 
         private void siticoneButton1_Click(object sender, EventArgs e)
         {
+            if (siticoneTextBox2.Text != siticoneTextBox3.Text)
+            {
+                siticoneMessageDialog1.Icon = Siticone.Desktop.UI.WinForms.MessageDialogIcon.Error;
+                siticoneMessageDialog1.Show("Пароль и повтор пароля не совпадают.", "Проверьте пароль!");
+                return;
+            }
+
             if (siticoneTextBox2.Text.Length < 8)
             {
                 siticoneMessageDialog1.Icon = Siticone.Desktop.UI.WinForms.MessageDialogIcon.Error;
@@ -173,6 +182,24 @@ namespace TaskManager
         }
 
         private void siticoneTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(e.KeyChar >= 'A' && e.KeyChar <= 'z') && !(char.IsNumber(e.KeyChar)) && !(e.KeyChar == (char)8))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneTextBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(e.KeyChar >= 'A' && e.KeyChar <= 'z') && !(char.IsNumber(e.KeyChar)) && !(e.KeyChar == (char)8))
             {
