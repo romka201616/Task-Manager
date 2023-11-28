@@ -164,6 +164,7 @@ namespace TaskManager
                     markButton.BorderRadius = 10;
                     markButton.Location = new Point(20, 176);
                     markButton.Text = status == -1 ? "Настало время" : status == 0 ? "Ждём" : "Выполнено";
+                    markButton.FillColor = status == -1 ? Color.Red : status == 0 ? deleteButton.FillColor : Color.Green;
                     markButton.Tag = row["ID"];
                     markButton.Click += MarkButton_Click;
 
@@ -271,6 +272,7 @@ namespace TaskManager
                     markButton.BorderRadius = 10;
                     markButton.Location = new Point(20, 176);
                     markButton.Text = status == -1 ? "Настало время" : status == 0 ? "Ждём" : "Выполнено";
+                    markButton.FillColor = status == -1 ? Color.Red : status == 0 ? deleteButton.FillColor : Color.Green;
                     markButton.Tag = row["ID"];
                     markButton.Click += MarkButton_Click;
 
@@ -376,6 +378,7 @@ namespace TaskManager
                     markButton.BorderRadius = 10;
                     markButton.Location = new Point(20, 176);
                     markButton.Text = status == -1 ? "Настало время" : status == 0 ? "Ждём" : "Выполнено";
+                    markButton.FillColor = status == -1 ? Color.Red : status == 0 ? deleteButton.FillColor : Color.Green;
                     markButton.Tag = row["ID"];
                     markButton.Click += MarkButton_Click;
 
@@ -484,6 +487,7 @@ namespace TaskManager
             {
                 PostgreManager.UpdateTaskStatus(taskId, 1);
                 markButton.Text = "Выполнено";
+                
             }
             else
             {
