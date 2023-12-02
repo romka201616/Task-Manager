@@ -34,9 +34,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(558, 450);
             this.Name = "EditTaskForm";
             this.Text = "EditTaskForm";
+            this.Load += new System.EventHandler(this.EditTaskForm_Load);
             this.ResumeLayout(false);
 
         }

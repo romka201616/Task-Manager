@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaskManager;
 
+
 namespace Task_Manager
 {
     public partial class EditTaskForm : Form
@@ -31,6 +32,11 @@ namespace Task_Manager
             CreateControls();
             LoadTaskData();
             LoadCategories(); // Загрузка списка категорий в ComboBox
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.ControlBox = false;
+            this.Text = "";
+            comboBoxCategory.Text = PostgreManager.GetCategoryName(int.Parse(PostgreManager.GetTaskById(taskId).ItemArray.GetValue(2).ToString()));
         }
 
         private void CreateControls()
@@ -39,39 +45,47 @@ namespace Task_Manager
             textBoxTaskName = new TextBox();
             textBoxTaskName.Location = new Point(10, 10);
             textBoxTaskName.Size = new Size(200, 20);
+            textBoxTaskName.Font = new Font(textBoxTaskName.Font.FontFamily, 14f, FontStyle.Regular);
             this.Controls.Add(textBoxTaskName);
 
             // Создание DateTimePicker для выбора новой даты выполнения задачи
             dateTimePickerDueDate = new DateTimePicker();
             dateTimePickerDueDate.Location = new Point(10, 40);
             dateTimePickerDueDate.Size = new Size(200, 20);
+            dateTimePickerDueDate.Font = new Font(dateTimePickerDueDate.Font.FontFamily, 14f, FontStyle.Regular);
             this.Controls.Add(dateTimePickerDueDate);
 
             // Создание TextBox для описания задачи
             textBoxDescription = new TextBox();
             textBoxDescription.Location = new Point(10, 70);
-            textBoxDescription.Size = new Size(200, 100);
+            textBoxDescription.Size = new Size(400, 200);
             textBoxDescription.Multiline = true;
+            textBoxDescription.Font = new Font(textBoxDescription.Font.FontFamily, 14f, FontStyle.Regular); // Изменить размер шрифта на 12
             this.Controls.Add(textBoxDescription);
 
             // Создание ComboBox для выбора категории задачи
             comboBoxCategory = new ComboBox();
-            comboBoxCategory.Location = new Point(10, 180);
+            comboBoxCategory.Location = new Point(10, 280);
             comboBoxCategory.Size = new Size(200, 20);
+            comboBoxCategory.Font = new Font(comboBoxCategory.Font.FontFamily, 14f, FontStyle.Regular);
             this.Controls.Add(comboBoxCategory);
 
             // Создание кнопки "Сохранить"
             buttonSave = new Button();
             buttonSave.Text = "Сохранить";
-            buttonSave.Location = new Point(10, 210);
+            buttonSave.Size = new Size(120, 40);
+            buttonSave.Location = new Point(10, 320);
             buttonSave.Click += buttonSave_Click;
+            buttonSave.Font = new Font(buttonSave.Font.FontFamily, 14f, FontStyle.Regular);
             this.Controls.Add(buttonSave);
 
             // Создание кнопки "Отмена"
             buttonCancel = new Button();
             buttonCancel.Text = "Отмена";
-            buttonCancel.Location = new Point(100, 210);
+            buttonCancel.Size = new Size(120, 40);
+            buttonCancel.Location = new Point(160, 320);
             buttonCancel.Click += buttonCancel_Click;
+            buttonCancel.Font = new Font(buttonCancel.Font.FontFamily, 14f, FontStyle.Regular);
             this.Controls.Add(buttonCancel);
         }
 
@@ -130,6 +144,11 @@ namespace Task_Manager
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void EditTaskForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
