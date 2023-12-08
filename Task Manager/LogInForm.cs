@@ -54,7 +54,7 @@ namespace TaskManager
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -102,6 +102,13 @@ namespace TaskManager
                 return;
             }
 
+            if (siticoneTextBox1.Text.Length < 4)
+            {
+                siticoneMessageDialog1.Icon = Siticone.Desktop.UI.WinForms.MessageDialogIcon.Error;
+                siticoneMessageDialog1.Show("Имя пользователя должно содержать как минимум 4 символа.", "Неверный формат имени!");
+                return;
+            }
+
             if (siticoneTextBox2.Text.Length < 8)
             {
                 siticoneMessageDialog1.Icon = Siticone.Desktop.UI.WinForms.MessageDialogIcon.Error;
@@ -120,6 +127,7 @@ namespace TaskManager
                 siticoneMessageDialog1.Icon = Siticone.Desktop.UI.WinForms.MessageDialogIcon.Information;
                 siticoneMessageDialog1.Show("Вы молодец. Теперь можете войти в этот аккаунт", "Пользователь успешно зарегистрирован!");
                 siticoneTextBox2.Clear();
+                siticoneTextBox3.Clear();
             }
             else
             {
